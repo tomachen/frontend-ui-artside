@@ -1,0 +1,20 @@
+{
+	"name": "frontend-ui-artside",
+	"description": "Develop a web page using CSS and HTML",
+	"author": "Constantine Genchevsky",
+	"version": "1.0.0",
+	"dependencies": {
+
+	},
+	"devDependencies": {
+		"grunt": "1.0.1",
+		"grunt-contrib-csslint": "1.0.0",
+		"grunt-contrib-watch": "1.0.0",
+		"grunt-htmlhint":  "0.9.13",
+        "grunt-w3c-html-validation": "0.1.8"
+	},
+	"scripts": {
+		"test": "grunt test",
+		"live": "grunt live"
+	}
+}
