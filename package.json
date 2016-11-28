@@ -3,18 +3,18 @@
 	"description": "Develop a web page using CSS and HTML",
 	"author": "Constantine Genchevsky",
 	"version": "1.0.0",
-	"dependencies": {
-
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"grunt": "1.0.1",
 		"grunt-contrib-csslint": "1.0.0",
 		"grunt-contrib-watch": "1.0.0",
-		"grunt-htmlhint":  "0.9.13",
-        "grunt-w3c-html-validation": "0.1.8"
+		"grunt-htmlhint": "0.9.13",
+		"grunt-w3c-html-validation": "0.1.8",
+		"grunt-browser-sync": "2.2.0"
 	},
 	"scripts": {
 		"test": "grunt test",
-		"live": "grunt live"
+		"live": "grunt live",
+		"start": "grunt start"
 	}
 }

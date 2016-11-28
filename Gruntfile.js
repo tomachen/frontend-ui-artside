@@ -22,21 +22,7 @@ module.exports = function (grunt) {
 				]
 			}
 		},
-		watch: {
-			sources: {
-				files: [
-					SRC_DIR + '/**/*.js',
-					SRC_DIR + '/**/*.css',
-					SRC_DIR + '/**/*.html'
-				],
-				//tasks: ['jshint'],
-				options: {
-					interrupt: true,
-					livereload: 35729
-				}
-			}
-		},
-        'validation': {
+		'validation': {
 			options: {
 				reset: grunt.option('reset') || false,
 				stoponerror: false,
@@ -51,6 +37,35 @@ module.exports = function (grunt) {
 			files: {
 				src: [SRC_DIR + '/**/*.html']
 			}
+		},
+		watch: {
+			sources: {
+				files: [
+					SRC_DIR + '/**/*.js',
+					SRC_DIR + '/**/*.css',
+					SRC_DIR + '/**/*.html'
+				],
+				//tasks: ['jshint'],
+				options: {
+					interrupt: true,
+					livereload: 35729
+				}
+			}
+		},
+		browserSync: {
+			bsFiles: {
+				src : [
+					SRC_DIR + '/**/*.js',
+					SRC_DIR + '/**/*.css',
+					SRC_DIR + '/**/*.html'
+				]
+			},
+			options: {
+				watchTask: true,
+				server: {
+					baseDir: SRC_DIR
+				}
+			}
 		}
 	});
 
@@ -58,11 +73,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-htmlhint');
 	grunt.loadNpmTasks('grunt-w3c-html-validation');
+	grunt.loadNpmTasks('grunt-browser-sync');
 
 	grunt.registerTask('live', ['watch']);
+	grunt.registerTask('start', ['browserSync', 'watch']);
 	grunt.registerTask('test', ['htmlhint:main','validation', 'csslint:main']);
-
-	//BAT files mirrors
-    grunt.registerTask('livereload', ['live']);
-	grunt.registerTask('analize', ['test']);
 };
