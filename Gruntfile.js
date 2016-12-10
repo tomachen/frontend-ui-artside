@@ -22,7 +22,7 @@ module.exports = function (grunt) {
 				]
 			}
 		},
-		'validation': {
+		validation: {
 			options: {
 				reset: grunt.option('reset') || false,
 				stoponerror: false,
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
 			}
 		},
 		watch: {
-			sources: {
+			all: {
 				files: [
 					SRC_DIR + '/**/*.js',
 					SRC_DIR + '/**/*.css',
@@ -54,16 +54,36 @@ module.exports = function (grunt) {
 		},
 		browserSync: {
 			bsFiles: {
-				src : [
+				src: [
 					SRC_DIR + '/**/*.js',
 					SRC_DIR + '/**/*.css',
 					SRC_DIR + '/**/*.html'
 				]
 			},
+			//https://www.browsersync.io/docs/options
 			options: {
 				watchTask: true,
 				server: {
 					baseDir: SRC_DIR
+				},
+				// proxy: '',
+				// host: '',
+				// port: 3000,
+				// https: true,
+				// startPath: '/info.php',
+				// browser: ['google chrome', 'firefox'']
+				// localOnly: true,
+				cors: false,
+				open: 'external',
+				notify: false,
+				reloadOnRestart: true,
+				reloadDelay: 0,
+				reloadDebounce: 0,
+				reloadThrottle: 0,
+				ghostMode: {
+					clicks: true,
+					forms: true,
+					scroll: true
 				}
 			}
 		}
@@ -77,5 +97,5 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('live', ['watch']);
 	grunt.registerTask('start', ['browserSync', 'watch']);
-	grunt.registerTask('test', ['htmlhint:main','validation', 'csslint:main']);
+	grunt.registerTask('test', ['htmlhint:main', 'validation', 'csslint:main']);
 };

@@ -13,8 +13,8 @@
 		"grunt-browser-sync": "2.2.0"
 	},
 	"scripts": {
+		"start": "grunt start",
 		"test": "grunt test",
-		"live": "grunt live",
-		"start": "grunt start"
+		"live": "grunt live"
 	}
 }
