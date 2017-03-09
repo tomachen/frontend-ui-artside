@@ -2,6 +2,7 @@ article, aside, footer, header, nav {
 	display: block;
 }
 body {
+	height: 100%;
 	font-size: 11px;
   font-family: verdana;
   background: url(../psd/bg-body.jpg);
@@ -68,9 +69,10 @@ margin-top: 45px;
 .wrapper {
 
   	width: 1024px;
-  	margin: 100px auto 50px;
-  	height: 100%;
+		margin: 100px auto 0;
     clear:both;
+		padding-bottom: 151px;
+
   }
 
 
@@ -117,7 +119,7 @@ h1, h2, h3{
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-  margin: 0 auto;
+  margin: -100px auto 0;
 	width: 1024px;
 	height: 100px;
 
