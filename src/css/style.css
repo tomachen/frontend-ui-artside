@@ -15,14 +15,14 @@ ul {
 
 @font-face {
     font-family: 'DINCyr-Regular';
-    src: url('./fonts/DINCyr-Regular.eot?#iefix') format('embedded-opentype'), url('./fonts/DINCyr-Regular.woff') format('woff'), url('./fonts/DINCyr-Regular.ttf') format('truetype'), url('./fonts/DINCyr-Regular.svg#DINCyr-Regular') format('svg');
+    src: url('../fonts/DINCyr-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/DINCyr-Regular.woff') format('woff'), url('../fonts/DINCyr-Regular.ttf') format('truetype'), url('../fonts/DINCyr-Regular.svg#DINCyr-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DIN-LightAlternate';
-    src: url('./fonts/DIN-LightAlternate.eot?#iefix') format('embedded-opentype'), url('./fonts/DIN-LightAlternate.otf') format('opentype'), url('./fonts/DIN-LightAlternate.woff') format('woff'), url('./fonts/DIN-LightAlternate.ttf') format('truetype'), url('./fonts/DIN-LightAlternate.svg#DIN-LightAlternate') format('svg');
+    src: url('../fonts/DIN-LightAlternate.eot?#iefix') format('embedded-opentype'), url('../fonts/DIN-LightAlternate.otf') format('opentype'), url('../fonts/DIN-LightAlternate.woff') format('woff'), url('../fonts/DIN-LightAlternate.ttf') format('truetype'), url('../fonts/DIN-LightAlternate.svg#DIN-LightAlternate') format('svg');
     font-weight: normal;
     font-style: normal;
 }
