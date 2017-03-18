@@ -1,4 +1,8 @@
-article, aside, footer, header, nav {
+article,
+aside,
+footer,
+header,
+nav {
     display: block;
 }
 
@@ -83,7 +87,7 @@ a {
     font-size: 40px;
     color: #363636;
     text-transform: uppercase;
-    }
+}
 
 .navigation-list a:hover {
     background-color: #707070;
@@ -133,25 +137,32 @@ div.column {
     height: 100%;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'DINCyr-Regular';
     text-transform: uppercase;
     font-size: 18px;
     font-weight: lighter;
 }
+
 .container {
     width: 100%;
 }
+
 .content {
     padding: 0 0 0 220px;
 }
+
 
 /*.column {
     display: inline-block;
 }*/
 
+
 /* Footer
 -----------------------------------------------------------------------------*/
+
 .footer {
     box-sizing: border-box;
     margin: -100px auto 0;
@@ -159,15 +170,19 @@ h1, h2, h3 {
     height: 100px;
     border-top: 1px solid rgba(171, 171, 171, 0.5);
 }
-.footer-element, .footer-link {
+
+.footer-element,
+.footer-link {
     vertical-align: top;
-    display:inline-block;
+    display: inline-block;
     margin-top: 40px;
     margin-right: 22px;
 }
-.footer-link a {
+
+.footer-link {
     color: #707070;
 }
-.footer-element p {
+
+.footer-element span {
     margin-top: 0;
 }
