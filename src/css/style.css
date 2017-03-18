@@ -136,6 +136,9 @@ div.column {
     width: auto;
     height: 100%;
 }
+.last-first-name {
+   word-wrap: break-word;
+}
 
 h1,
 h2,
