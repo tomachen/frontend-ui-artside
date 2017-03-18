@@ -74,6 +74,7 @@ a {
 
 .navigation-list ul {
     padding-left: 0;
+    margin-top: -8px;
 }
 
 .navigation-list a {
@@ -82,7 +83,7 @@ a {
     font-size: 40px;
     color: #363636;
     text-transform: uppercase;
-}
+    }
 
 .navigation-list a:hover {
     background-color: #707070;
@@ -100,6 +101,7 @@ a {
 
 div.all-columns {
     clear: both;
+    overflow: hidden;
 }
 
 div.all-columns ul {
@@ -123,6 +125,7 @@ div.column {
     margin-bottom: 18px;
     overflow: hidden;
     text-align: center;
+    background-color: #000;
 }
 
 .image img {
@@ -143,9 +146,9 @@ h1, h2, h3 {
     padding: 0 0 0 220px;
 }
 
-.column {
+/*.column {
     display: inline-block;
-}
+}*/
 
 /* Footer
 -----------------------------------------------------------------------------*/
