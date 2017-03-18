@@ -119,14 +119,21 @@ div.column {
 
 .column li {
     clear: both;
+    
+}
+.column li .column-element{
+   display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .image {
     width: 78px;
     height: 78px;
     float: left;
-    margin-right: 13px;
-    margin-bottom: 18px;
+    /*margin-right: 13px;
+    margin-bottom: 20px;*/
     overflow: hidden;
     text-align: center;
     background-color: #000;
@@ -138,6 +145,7 @@ div.column {
 }
 .last-first-name {
    word-wrap: break-word;
+   margin-left: 85px;
 }
 
 h1,
