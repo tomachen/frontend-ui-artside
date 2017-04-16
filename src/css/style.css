@@ -115,18 +115,23 @@ div.all-columns ul {
 
 div.column {
     float: left;
-    width: 33%;
+    width: 234px;
+    margin-right: 50px;
 }
-
+div.column:last-child {
+    margin-right: 0;
+}
 .column li {
     clear: both;
     
+}
+
 }
 .column li .column-element{
    display: block;
     overflow: hidden;
     margin-bottom: 20px;
-    margin-right: 20px;
+    
 }
 
 .image {
